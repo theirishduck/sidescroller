@@ -208,7 +208,7 @@ int WINAPI WinMain(HINSTANCE hinstance,
    // create the window
    if (!(hwnd = CreateWindowEx(NULL,                     // extended style
                                WINDOW_CLASS_NAME,        // class
-                               "Megaman4 Animation DD",  // title
+                               "Sidescroller example by Campbell Craig",  // title
                                WS_POPUP | WS_VISIBLE,    // use POPUP for full screen
                                0,0,           // initial game window x,y
                                WINDOW_WIDTH,  // initial game width
@@ -439,7 +439,7 @@ void GameMain()
       
    IDirectDrawSurface_Blt(game_draw_back,&temp_rect,hbmp[meg_pos + meg_dir],&bmp_rect,DDBLT_WAIT | DDBLT_KEYSRC, NULL);
 
-   // check for keys and move Megaman or scroll visible screen
+   // check for keys and move man or scroll visible screen
    
    if (ymove != 0) // we are in the air
    {
